@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t Surekha-hash/adservice:latest ."
+                        sh "docker build -t surekha91227/adservice:latest ."
                     }
                 }
             }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push Surekha-hash/adservice:latest "
+                        sh "docker push surekha91227/adservice:latest "
                     }
                 }
             }
