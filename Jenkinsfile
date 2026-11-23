@@ -6,7 +6,7 @@ hpipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t Surekha-hash/frontend:latest ."
+                        sh "docker build -t surekha91227/frontend:latest ."
                     }
                 }
             }
@@ -16,7 +16,7 @@ hpipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push Surekha-hash/frontend:latest"
+                        sh "docker push surekha91227/frontend:latest"
                     }
                 }
             }
