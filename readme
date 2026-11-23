@@ -1,0 +1,2 @@
+install docker, kubernetes plugins in jenkins
+add dockerhub, k8-token created from service-account in k8's in jenkins credentials
